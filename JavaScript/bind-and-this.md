@@ -11,7 +11,7 @@ let dog = {
 dog.talk() // “woof”
 ```
 
-~Reassign the “talk” method inside dog object to a variable~
+Reassign the “talk” method inside dog object to a variable
 
 ```
 let talkFunction = dog.talk;
