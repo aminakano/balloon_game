@@ -61,7 +61,7 @@ I was working on a website that has to work on IE and Edge, but unfortunately, f
 }
 ```
 #### 2. Set container width
-It was totally fine without width on Firefox, Chrome and Safari, but the container was horizontally overflowing on IE and Edge. After setting `width: 80%;` to the flex container, it displays as it's supposed to.
+It was totally fine without setting width on Firefox, Chrome, Safari and mobile devices, but the container was horizontally overflowing on IE and Edge. After setting `width: 80%;` to the flex container, it displays as it's supposed to.
 ```
 .flex-container {
   margin-right: 10%;
@@ -88,3 +88,34 @@ Since `justify-content: space-evenly;` is not available on IE, I put `justify-co
 `justify-content: space-evenly;` is applied on Edge, but not reflected properly. Then I want to use `justify-content: space-around;` instead.
 
 #### 4. Target a specific browser
+
+So, let's target Edge!
+There are several way to do, and what I can think of is to use CSS and/or JavaScript.
+
+##### 1. Use CSS
+`@supports` *lets you specify declarations that depend on a browser's support for one or more specific CSS features.*
+MDN: <https://developer.mozilla.org/en-US/docs/Web/CSS/@supports>
+
+By checking `-ms-ime-align: auto` property, which Edge only supports, we can target it.
+```
+@supports (-ms-ime-align: auto) {
+  .flex-container {
+    justify-content: space-around;
+  }
+}
+```
+##### 2. Use JavaScript & CSS
+I would have chosen this approach if my project wasn't Server Side Rendering.
+We can use a string that `window.navigator.userAgent` returns.
+```
+// JavaScript
+const flexContainer = document.querySelector(".flex-container");
+if (window.navigator.userAgent.includes("Edge")) {
+  flexContainer.classList.add("edge");
+}
+// CSS
+.flex-container.edge {
+  justify-content: space-around;
+}
+```
+##### DONE!!
