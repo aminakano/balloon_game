@@ -90,7 +90,7 @@ Since `justify-content: space-evenly;` is not available on IE, I put `justify-co
 #### 4. Target a specific browser
 
 So, let's target Edge!
-There are several way to do, and what I can think of is to use CSS and/or JavaScript.
+There are several ways to do, and what I can think of is to use CSS and/or JavaScript.
 
 ##### 1. Use CSS
 `@supports` *lets you specify declarations that depend on a browser's support for one or more specific CSS features.*
@@ -119,3 +119,5 @@ if (window.navigator.userAgent.includes("Edge")) {
 }
 ```
 ##### DONE!!
+
+Ref: <https://stackoverflow.com/questions/32940965/how-to-target-microsoft-edge-with-css>
