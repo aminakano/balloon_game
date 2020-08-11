@@ -1,10 +1,10 @@
 # How to set up node.js on a new Mac
 
-Setting up a new PC is kind of a pain since I haven't done initial setups for many years.
-So here I wrote for how to/ what to set up on a brand-new Mac as a developer in 2020.
+Setting up a new PC is sort of a pain since I haven't done initial setups for many years. And it is not supposed to be done on a regular basis.
+So here I wrote a memorandum regarding how to/ what to set up on a brand-new Mac as a developer in 2020.
 
 ## 1. Install XCode
-When I ran a command `git --version` and the terminal told like this:
+When I ran a command `git --version` and Terminal told like this:
 ```
 xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
 ```
@@ -14,11 +14,11 @@ Now let us try `git --version` and the result should be `git version 2.19.0` or 
 ### ...OK! What now?
 
 ## 2. Install node.js & npm
-I was disappointed when I run a command `npm install -g [somepackage]` or `npm --version` and my new terminal told `zsh: command not found: npm`.
+I was disappointed when I ran a command `npm install -g [somepackage]` or `npm --version` and Terminal told `zsh: command not found: npm`.
 
-### Let's start installing Homebrew!🍺
+### Let's start installing Homebrew! 🍺
 
-At terminal, run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`, follow the instructions and complete the installation. Then run `brew install node`.
+At Terminal, run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`, follow the instructions and complete the installation. Then run `brew install node`.
 
 If you see
 ```
@@ -29,7 +29,7 @@ you are good to go!
 
 Let's run `node -v` and should see its version like `v14.7.0`. Also, run `npm -v` for test and see something like `6.14.7`.
 
-## Congratulations!🎉
+## Congratulations! 🎉
 
 *Reference:* 
 - <https://treehouse.github.io/installation-guides/mac/homebrew>
