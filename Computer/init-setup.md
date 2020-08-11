@@ -1,3 +1,5 @@
+# How to set up node.js on a new Mac
+
 Setting up a new PC is kind of a pain since I haven't done initial setups for many years.
 So here I wrote for how to/ what to set up on a brand-new Mac as a developer in 2020.
 
@@ -8,15 +10,15 @@ xcode-select: note: no developer tools were found at '/Applications/Xcode.app', 
 ```
 So, let's install XCode here: <https://apps.apple.com/us/app/xcode/id497799835?mt=12>
 
-Now let's try `git --version` and the result should be `git version 2.19.0` or something like that.
+Now let us try `git --version` and the result should be `git version 2.19.0` or something like that.
 ### ...OK! What now?
 
 ## 2. Install node.js & npm
 I was disappointed when I run a command `npm install -g [somepackage]` or `npm --version` and my new terminal told `zsh: command not found: npm`.
 
-### Let's start installing Homebrew!
+### Let's start installing Homebrew!🍺
 
-At terminal, run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`, follow the instructions and complete the installation.
+At terminal, run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`, follow the instructions and complete the installation. Then run `brew install node`.
 
 If you see
 ```
@@ -25,5 +27,10 @@ Bash completion has been installed to:
 ```
 you are good to go!
 
-Let's run `node -v` and should see its version like `v14.7.0`. Also, you can run `npm -v` and see something like `6.14.7`.
+Let's run `node -v` and should see its version like `v14.7.0`. Also, run `npm -v` for test and see something like `6.14.7`.
 
+## Congratulations!🎉
+
+*Reference:* 
+- <https://treehouse.github.io/installation-guides/mac/homebrew>
+- <https://treehouse.github.io/installation-guides/mac/node-mac.html>
