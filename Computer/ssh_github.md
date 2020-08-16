@@ -4,6 +4,7 @@
 
 **How?**  Run `cat ~/.ssh/id_rsa.pub` on Terminal on your old computer and you will see a long string with your email address. 
 **Where?** Open home directory on your Finder and press `Cmd + Shift + .` You will see hidden folders and `.ssh` folder is one of them.
+![.ssh](/images/ssh.png)
 
 ## Moving .ssh folder to a new Mac
 My recommendation is to make a backup of your old Mac, connect the backup to your new Mac and copy the entire `.ssh` folder to your new Mac's home directory.
