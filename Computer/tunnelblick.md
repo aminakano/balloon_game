@@ -22,6 +22,6 @@ Find `/Users/username/Library/Application Support/Tunnelblick`. Note that Librar
 <img src="/images/tblk.png" width="400">
 </P>
 
-*Reference*
+*Reference:*
 - <https://tunnelblick.net/downloads.html>
 - <https://tunnelblick.net/cFileLocations.html>
