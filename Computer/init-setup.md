@@ -1,7 +1,7 @@
 # How to set up node.js on a new Mac
 
 Setting up a new PC is sort of a pain since I haven't done initial setups for many years. And it is not supposed to be done on a regular basis.
-So here I wrote a memorandum regarding how to/ what to set up on a brand-new Mac as a developer in 2020.
+So here I wrote a memorandum regarding how to/ what to set up on a brand-new Mac as a developer in 2021.
 
 ## 1. Install XCode
 
@@ -13,7 +13,7 @@ xcode-select: note: no developer tools were found at '/Applications/Xcode.app', 
 
 So, let's install XCode here: <https://apps.apple.com/us/app/xcode/id497799835?mt=12>
 
-Now let us try `git --version` and the result should be `git version 2.19.0` or something like that.
+Now let us try `git --version` and the result should be `git version 2.24.3` or something like that.
 
 ### ...OK! What now?
 
@@ -34,7 +34,7 @@ Bash completion has been installed to:
 
 you are good to go!
 
-Let's run `node -v` and should see its version like `v15.4.0`. Also, run `npm -v` for test and see something like `7.0.15`.
+Let's run `node -v` and should see its version like `v15.4.0`. Also, run `npm -v` for test and see something like `7.5.3`.
 
 ## Congratulations! 🎉
 
